@@ -37,4 +37,4 @@ You can find the token addresses (again, for BSC tokens) by searching for their 
 
 ## This is not a finished product
 
-While this code will work, it is without any form of error checking and shouldn't be used in production as-is.
+While this code will work, it is without sufficient error checking and shouldn't be used in production as-is.
