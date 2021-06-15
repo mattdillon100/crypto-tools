@@ -10,3 +10,9 @@ Each are in their own directories with their own readme.
 
 The scripts in here are based on usage for BSC (Binance Smart Chain) coins/tokens. Some may be adaptable for other
 chains, I'm not sure. I will try to keep documentation up to date as I find out.
+
+### Bundled Tools
+
+| Function | Link |
+|----------|------|
+| **Get wallet multiple balances** | https://github.com/wildcard27/crypto-tools/tree/master/get-wallet-balances | 
