@@ -1,0 +1,27 @@
+{
+  "name": "get-price-lambda",
+  "version": "1.0.0",
+  "description": "get-price-lambda",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buyporntoken/get-price-lambda.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/buyporntoken/get-price-lambda/issues"
+  },
+  "homepage": "https://github.com/buyporntoken/get-price-lambda#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "web3-eth-contract": "^1.3.6"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.920.0"
+  }
+}

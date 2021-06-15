@@ -15,4 +15,5 @@ chains, I'm not sure. I will try to keep documentation up to date as I find out.
 
 | Function | Link |
 |----------|------|
-| **Get wallet multiple balances** | https://github.com/wildcard27/crypto-tools/tree/master/get-wallet-balances | 
+| **Get wallet multiple balances** | [Link](get-wallet-balances/README.md) | 
+| **Get token price** | [link](get-token-price/README.md)
