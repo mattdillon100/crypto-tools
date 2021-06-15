@@ -1,0 +1,24 @@
+{
+  "name": "get-wallet-balances-lamda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buyporntoken/get-wallet-balances-lamda.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/buyporntoken/get-wallet-balances-lamda/issues"
+  },
+  "homepage": "https://github.com/buyporntoken/get-wallet-balances-lamda#readme",
+  "dependencies": {
+    "web3": "^1.3.6"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.920.0"
+  }
+}
