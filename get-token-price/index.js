@@ -1,6 +1,9 @@
 const fetch = require('node-fetch');
 const Aws = require('aws-sdk');
 
+const QUERY_URL = 'https://graphql.bitquery.io/';
+const DDB_TABLENAME = 'table1';
+
 const token1Address = '0x11111111111111111111111111111';
 const token2Address = '0x22222222222222222222222222222';
 const token3Address = '0x33333333333333333333333333333';
@@ -45,7 +48,7 @@ const getReservePrices = async (base, quote) => {
     body: JSON.stringify({ query })
   };
 
-  return await fetch('https://graphql.bitquery.io/', params)
+  return await fetch(QUERY_URL, params)
     .then(response => response.json())
     .then(result => {
       return result.data.ethereum.dexTrades[0].quotePrice.toFixed(30);
@@ -56,10 +59,10 @@ const getReservePrices = async (base, quote) => {
 }
 
 const getTotal = async () => {
-  const pornPerBnb = await getReservePrices(token1Address, token2Address);
-  const bnbPerBusd = await getReservePrices(token2Address, token3Address);
+  const token1PricePerToken2 = await getReservePrices(token1Address, token2Address);
+  const token2PricePerToken3 = await getReservePrices(token2Address, token3Address);
 
-  return (pornPerBnb * bnbPerBusd).toFixed(20);
+  return (token1PricePerToken2 * token2PricePerToken3).toFixed(20);
 }
 
 const putPrice = async (price) => {
@@ -72,7 +75,7 @@ const putPrice = async (price) => {
         N: price
       },
     },
-    TableName: 'pornPrices'
+    TableName: DDB_TABLENAME
   };
 
   try {
